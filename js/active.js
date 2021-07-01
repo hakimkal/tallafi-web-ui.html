@@ -32,24 +32,22 @@
             autoplay: true,
             smartSpeed: 1500,
             responsiveClass: true,
+            center: true,
             responsive: {
                 0: {
                     items: 1,
                     nav: false,
                     dot: true,
-                    center: true,
                 },
                 600: {
                     items: 1,
                     nav: false,
                     dot: true,
-                    center: true,
                 },
                 1000: {
                     items: 1,
                     nav: false,
                     dot: true,
-                    center: true,
                 }
             }
         })
