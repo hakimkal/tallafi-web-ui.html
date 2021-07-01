@@ -1,0 +1,255 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .testimonials-slides .owl-prev {
+    left: -3%;
+  }
+
+  .testimonials-slides .owl-next {
+    right: -3%;
+  }
+  .tf-skills-area {
+    padding: 100px;
+  }
+  .breadcumb-content h2 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header_area {
+    height: 70px;
+    padding: 0 30px;
+  }
+  .navbar-toggler {
+    border: 2px solid #fff;
+    margin: 18px 0;
+  }
+  .navbar-toggler span {
+    color: #fff;
+  }
+  #ccNav {
+    background: #7450fe;
+    background: -webkit-linear-gradient(to right, #7450fe, #21d397);
+    background: -webkit-linear-gradient(left, #7450fe, #21d397);
+    background: linear-gradient(to right, #7450fe, #21d397);
+    padding: 15px;
+    border-radius: 0 0 3px 3px;
+    margin-top: -2px;
+  }
+  .tf-search-and-shop-area {
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .tf-search-form {
+    height: 70px;
+    padding: 0 30px;
+  }
+  .tf-search-form form input {
+    font-size: 30px;
+  }
+  .search-close-btn {
+    top: 4px;
+  }
+  .tf-hero-content h2 {
+    font-size: 36px;
+    width: 100%;
+  }
+  .tf-hero-area {
+    height: 800px;
+  }
+  .about-us-thumb {
+    margin-top: 50px;
+  }
+  .tf-skills-area {
+    padding: 100px 0;
+  }
+  .testimonials-slides .owl-prev {
+    left: -2%;
+  }
+  .testimonials-slides .owl-next {
+    right: -2%;
+  }
+  .footer-nav ul li a {
+    padding: 0 5px;
+  }
+  .breadcumb-content h2 {
+    font-size: 36px;
+  }
+  .blog-sidebar {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header_area {
+    height: 70px;
+    padding: 0 15px;
+  }
+  .navbar-toggler {
+    border: 2px solid #68686a;
+    margin: 18px 0;
+  }
+  .navbar-toggler:focus {
+    outline: 1px dotted;
+    outline: 5px auto #f9af4c;
+  }
+  .navbar-toggler span {
+    color: #68686a;
+  }
+  #ccNav {
+    background: #fff;
+    padding: 15px 0;
+    border-radius: 0 0 3px 3px;
+    margin-top: -2px;
+  }
+  #ccNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .tf-search-and-shop-area {
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .tf-search-form {
+    height: 70px;
+    padding: 0 30px;
+  }
+  .tf-search-form form input {
+    font-size: 30px;
+  }
+  .search-close-btn {
+    top: 4px;
+  }
+  .tf-hero-content h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .tf-hero-content h5 {
+    width: 100%;
+  }
+  .video-overview > a {
+    margin-bottom: 30px;
+  }
+  .single-top-feature .content {
+    padding: 20px;
+  }
+  .tf-top-features-content {
+    position: relative;
+    bottom: -100px;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  .tf-about-us-area {
+    padding-top: 200px;
+  }
+  .about-us-text > h2 {
+    font-size: 24px;
+    width: 100%;
+  }
+  .about-us-thumb {
+    margin-top: 50px;
+  }
+  .tf-hero-area {
+    height: 550px;
+  }
+  .tf-hero-content {
+    margin-top: 100px;
+  }
+  .tf-hero-verify {
+    width: 100%;
+  }
+  .tf-skills-area {
+    padding: 100px 0;
+  }
+  .skills-side-thumb {
+    position: relative;
+    width: calc(100% - 15px);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    margin-bottom: 50px;
+  }
+  .footer-copywrite-area {
+    height: 100px;
+  }
+  .copywrite-text p {
+    font-size: 12px;
+    text-align: center;
+    margin-right: 30px;
+  }
+  .footer-nav ul li a {
+    font-size: 12px;
+    text-align: center;
+    padding: 0 10px 0 0;
+  }
+  .testimonials-slides .owl-prev {
+    left: -2%;
+  }
+  .testimonials-slides .owl-next {
+    right: -2%;
+  }
+  .contact-form-area {
+    margin-top: 100px;
+  }
+  .breadcumb-content h2 {
+    font-size: 24px;
+  }
+  .blog-sidebar {
+    margin-top: 100px;
+  }
+  .logo {
+    width: 60px;
+  }
+  .section-heading {
+    font-size: 20px;
+    width: 100%;
+  }
+  .tf-footer-area .footer-logo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tf-campaign-about-content {
+    padding: 25px;
+  }
+  .tf-campaign-about-img {
+    height: auto;
+    width: 100%;
+  }
+  .tf-campaign-about-content-bottom > div {
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  .tf-other-hero-area {
+    padding: 160px 20px;
+  }
+  .tf-inner-page {
+    padding: 25px;
+  }
+  .tf-inner-page .head p {
+    width: 100%;
+  }
+  .tf-contact form {
+    max-width: 100%;
+  }
+  .tf-start-campaign form {
+    max-width: 100%;
+  }
+  .tf-each-story h5 {
+    margin-top: 20px;
+  }
+  .tf-each-story {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tf-each-story img {
+    margin-right: 0;
+  }
+}
