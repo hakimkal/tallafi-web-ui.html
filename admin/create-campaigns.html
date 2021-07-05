@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Tallafi Admin</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico" />
+
+    <!-- Core Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+      <div class="loader">
+        <img
+          class="logo-loader"
+          src="./img/core-img/logo-white.png"
+          alt="Logo"
+        />
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <ul
+        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+          href="index.html"
+        >
+          <img src="img/core-img/logo-white.png" alt="" />
+        </a>
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <img src="img/core-img/home.svg" alt="" />
+            <span>Dashboard</span></a
+          >
+        </li>
+        <!-- Nav Item - Campaigns -->
+        <li class="nav-item">
+          <a class="nav-link" href="campaigns.html">
+            <img src="img/core-img/heart.svg" alt="" />
+            <span>Campaigns</span></a
+          >
+        </li>
+        <!-- Nav Item - Create Campaign -->
+        <li class="nav-item">
+          <a class="nav-link active" href="create-campaigns.html">
+            <img src="img/core-img/heart.svg" alt="" />
+            <span>Create Campaign</span></a
+          >
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="beneficiaries.html">
+            <img src="img/core-img/users.svg" alt="" />
+            <span>Beneficiaries</span></a
+          >
+        </li>
+      </ul>
+
+      <div class="content-wrapper">
+        <nav
+          class="
+            navbar navbar-expand navbar-light
+            bg-white
+            topbar
+            mb-4
+            static-top
+            shadow
+          "
+        >
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="userDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  class="img-profile rounded-circle"
+                  src="img/core-img/madugu.png"
+                />
+                <span
+                  class="
+                    mr-2
+                    d-none d-md-inline d-lg-inline
+                    text-gray-600
+                    small
+                  "
+                  >Maryam Madugu</span
+                >
+                <img
+                  src="img/core-img/arrow-down.svg"
+                  class="icon-img"
+                  alt=""
+                />
+              </a>
+              <!-- Dropdown - User Information -->
+              <div
+                class="
+                  dropdown-menu dropdown-menu-right
+                  shadow
+                  animated--grow-in
+                "
+                aria-labelledby="userDropdown"
+              >
+                <a class="dropdown-item" href="profile.html">
+                  Profile Settings
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"> Logout </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="container-fluid px-md-5">
+          <div class="row">
+            <div class="col-md-8 mb-4">
+              <h1 class="page-head">Campaigns</h1>
+            </div>
+            <div class="page-card col-md-8 page-inputs">
+              <form>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control tf-form-control"
+                    id="name"
+                    aria-describedby="name"
+                    placeholder="Campaign Title"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control tf-form-control"
+                    id="category"
+                    placeholder="Category of Campaign"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    class="form-control tf-form-control"
+                    id="number"
+                    placeholder="Amount to be raised"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control tf-form-control"
+                    id="idNumber"
+                    placeholder="ID Number"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control tf-form-control"
+                    id="Location"
+                    placeholder="Location"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control tf-form-control"
+                    id="focal"
+                    placeholder="Focal Person for this project "
+                  />
+                </div>
+                <div class="form-group">
+                  <div class="upload-section-wrapper">
+                    <div
+                      class="
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        flex-column
+                      "
+                    >
+                      <img src="img/core-img/upload.svg" class="mb-4" alt="" />
+                      <p>
+                        <span>Tap here</span> to select a file from your device
+                      </p>
+                    </div>
+                    <input type="file" name="myfile" />
+                  </div>
+                </div>
+                <h3>Beneficiary Bank details</h3>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control tf-form-control"
+                    id="focal"
+                    placeholder="Account Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control tf-form-control"
+                    id="focal"
+                    placeholder="Bank Account Number"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control tf-form-control"
+                    id="focal"
+                    placeholder="Select Bank"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control tf-form-control"
+                    id="focal"
+                    placeholder="Name"
+                  />
+                </div>
+                <div
+                  class="
+                    form-group
+                    d-flex
+                    flex-column
+                    justify-content-center
+                    align-items-end
+                  "
+                >
+                  <button type="submit" class="btn tf-btn">
+                    Start a Campaign
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap-4 js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- Count up js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="js/others/counter-up.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/others/plugins.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+  </body>
+</html>

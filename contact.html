@@ -36,7 +36,7 @@
     </div>
 
     <!-- ***** Header Area Start ***** -->
-    <header class="header_area" id="header">
+  <header class="header_area" id="header">
       <div class="container-fluid h-100">
         <div class="row h-100">
           <div class="col-12 h-100">
@@ -49,22 +49,84 @@
                 class="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
-                data-target="#tallafi"
-                aria-controls="tallafi"
+                data-target="#ccNav"
+                aria-controls="ccNav"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
                 <span class="ti-menu"></span>
               </button>
-              <div class="collapse navbar-collapse" id="tallafi">
+              <div class="collapse navbar-collapse" id="ccNav">
                 <ul class="navbar-nav ml-auto">
+                  <li class="nav-item text-link">
+                    <div
+                      class="
+                        dropdown
+                        show
+                        position-relative
+                        d-flex
+                        justify-content-end
+                        align-items-center
+                      "
+                    >
+                      <img src="img/core-img/arrow-down.svg" alt="" />
+                      <a
+                        class="btn tf-btn tf-btn-no-outline p-0"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Categories
+                      </a>
+
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <a class="dropdown-item" href="covid-campaigns.html"
+                          >COVID-19 Campaigns</a
+                        >
+                        <a class="dropdown-item" href="covid-campaigns.html"
+                          >Ramadan</a
+                        >
+                        <a class="dropdown-item" href="covid-campaigns.html"
+                          >Education & Competition</a
+                        >
+                        <a class="dropdown-item" href="covid-campaigns.html"
+                          >Memorial & Funerals</a
+                        >
+                        <a class="dropdown-item" href="covid-campaigns.html"
+                          >Events</a
+                        >
+                        <a class="dropdown-item" href="covid-campaigns.html"
+                          >Charities & Non Profits</a
+                        >
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="covid-campaigns.html"
+                          >See All</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item text-link">
+                    <a href="how-it-works.html">How It Works</a>
+                  </li>
                   <li class="nav-item">
-                    <a href="about.html" class="btn tf-btn tf-btn-outline"
+                    <a
+                      href="#"
+                      data-toggle="modal"
+                      data-target="#loginModal"
+                      class="btn tf-btn tf-btn-outline"
                       >Login</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a href="about.html" class="btn tf-btn">Start a Campaign</a>
+                    <a href="start-campaign.html" class="btn tf-btn"
+                      >Start a Campaign</a
+                    >
                   </li>
                 </ul>
               </div>

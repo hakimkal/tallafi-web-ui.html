@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Tallafi Admin</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico" />
+
+    <!-- Core Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+      <div class="loader">
+        <img
+          class="logo-loader"
+          src="./img/core-img/logo-white.png"
+          alt="Logo"
+        />
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <ul
+        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+          href="index.html"
+        >
+          <img src="img/core-img/logo-white.png" alt="" />
+        </a>
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">
+            <img src="img/core-img/home.svg" alt="" />
+            <span>Dashboard</span></a
+          >
+        </li>
+        <!-- Nav Item - Campaigns -->
+        <li class="nav-item">
+          <a class="nav-link" href="campaigns.html">
+            <img src="img/core-img/heart.svg" alt="" />
+            <span>Campaigns</span></a
+          >
+        </li>
+        <!-- Nav Item - Create Campaign -->
+        <li class="nav-item">
+          <a class="nav-link" href="create-campaigns.html">
+            <img src="img/core-img/heart.svg" alt="" />
+            <span>Create Campaign</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="beneficiaries.html">
+            <img src="img/core-img/users.svg" alt="" />
+            <span>Beneficiaries</span></a
+          >
+        </li>
+      </ul>
+
+      <div class="content-wrapper">
+        <nav
+          class="
+            navbar navbar-expand navbar-light
+            bg-white
+            topbar
+            mb-4
+            static-top
+            shadow
+          "
+        >
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="userDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  class="img-profile rounded-circle"
+                  src="img/core-img/madugu.png"
+                />
+                <span
+                  class="
+                    mr-2
+                    d-none d-md-inline d-lg-inline
+                    text-gray-600
+                    small
+                  "
+                  >Maryam Madugu</span
+                >
+                <img
+                  src="img/core-img/arrow-down.svg"
+                  class="icon-img"
+                  alt=""
+                />
+              </a>
+              <!-- Dropdown - User Information -->
+              <div
+                class="
+                  dropdown-menu dropdown-menu-right
+                  shadow
+                  animated--grow-in
+                "
+                aria-labelledby="userDropdown"
+              >
+                <a class="dropdown-item" href="profile.html"> Profile Settings </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"> Logout </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="container-fluid">
+          <div class="mb-4">
+            <h1 class="page-head">Hello Maryam,</h1>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <div class="page-card top-stats">
+                <img src="img/core-img/money.svg" alt="" />
+                <div>
+                  <h5>Total Amount Collected this Month</h5>
+                  <span>N5,205,350.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="page-card top-stats">
+                <img src="img/core-img/donation.svg" alt="" />
+                <div>
+                  <h5>Total Number of Donations this Month</h5>
+                  <span>800</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="page-card top-stats">
+                <img src="img/core-img/money.svg" alt="" />
+                <div>
+                  <h5>Total Number of Campaigns</h5>
+                  <span>16 <a href="">View All Campaigns</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5">
+            <div class="d-flex justify-content-between">
+              <h2 class="table-head">Recent Donations</h2>
+              <div>
+                <a class="mr-2" href="">View All Donations</a>
+                <a href=""> <img src="img/core-img/filter.svg" class="mr-2" height="24" width="24" alt=""> Filter</a>
+              </div>
+            </div>
+            <table class="table page-table">
+              <thead>
+                <tr>
+                  <th scope="col">Donors</th>
+                  <th scope="col">Campaign</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Amount Donated</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Gidado Ahmad</td>
+                  <td>Provide Launch for Children in Gorrobawa</td>
+                  <td>Ramadan</td>
+                  <td>N12,000.000</td>
+                  <td>
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="userDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img src="img/core-img/dots.svg" alt="" />
+                    </a>
+                    <!-- Dropdown - User Information -->
+                    <div
+                      class="
+                        dropdown-menu dropdown-menu-right
+                        shadow
+                        animated--grow-in
+                      "
+                      aria-labelledby="userDropdown"
+                    >
+                     <a class="dropdown-item" href="campaign.html">View Campaign</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="create-campaigns.html">Edit Campaign</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Delete Campaign</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Gidado Ahmad</td>
+                  <td>Provide Launch for Children in Gorrobawa</td>
+                  <td>Ramadan</td>
+                  <td>N12,000.000</td>
+                  <td>
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="userDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img src="img/core-img/dots.svg" alt="" />
+                    </a>
+                    <!-- Dropdown - User Information -->
+                    <div
+                      class="
+                        dropdown-menu dropdown-menu-right
+                        shadow
+                        animated--grow-in
+                      "
+                      aria-labelledby="userDropdown"
+                    >
+                      <a class="dropdown-item" href="campaign.html">View Campaign</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="create-campaigns.html">Edit Campaign</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Delete Campaign</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Gidado Ahmad</td>
+                  <td>Provide Launch for Children in Gorrobawa</td>
+                  <td>Ramadan</td>
+                  <td>N12,000.000</td>
+                  <td>
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="userDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img src="img/core-img/dots.svg" alt="" />
+                    </a>
+                    <!-- Dropdown - User Information -->
+                    <div
+                      class="
+                        dropdown-menu dropdown-menu-right
+                        shadow
+                        animated--grow-in
+                      "
+                      aria-labelledby="userDropdown"
+                    >
+                      <a class="dropdown-item" href="campaign.html">View Campaign</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="create-campaigns.html">Edit Campaign</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Delete Campaign</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Gidado Ahmad</td>
+                  <td>Provide Launch for Children in Gorrobawa</td>
+                  <td>Ramadan</td>
+                  <td>N12,000.000</td>
+                  <td>
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="userDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img src="img/core-img/dots.svg" alt="" />
+                    </a>
+                    <!-- Dropdown - User Information -->
+                    <div
+                      class="
+                        dropdown-menu dropdown-menu-right
+                        shadow
+                        animated--grow-in
+                      "
+                      aria-labelledby="userDropdown"
+                    >
+                      <a class="dropdown-item" href="campaign.html">View Campaign</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="create-campaigns.html">Edit Campaign</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Delete Campaign</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap-4 js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- Count up js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="js/others/counter-up.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/others/plugins.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+  </body>
+</html>
