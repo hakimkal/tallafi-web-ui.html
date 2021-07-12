@@ -303,6 +303,51 @@ li {
   border: solid 2px #f9af4c;
 }
 
+.tf-custom-select {
+    position: relative;
+}
+.tf-custom-select .tf-select-input-box img {
+    right: 10px;
+    top: 10px;
+}
+.tf-custom-select .tf-select-input-box input {
+    cursor: pointer;
+    color: transparent;
+    text-shadow: 0 0 0 gray;
+}
+.tf-custom-select .tf-select-input-box input:focus {
+    outline: none;
+}
+.tf-custom-select .select-options {
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 12px;
+    position: absolute;
+    width: 100%;
+    margin-top: 5px;
+    z-index: 2;
+    display: none;
+}
+.tf-custom-select .select-options.open {
+    display: block;
+}
+.tf-custom-select .select-options a {
+    text-decoration: none;
+    padding: 9px 30px;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    line-height: 132.3%;
+    letter-spacing: -0.03em;
+    color: #4b4d4d;
+    border-radius: 12px;
+}
+.tf-custom-select .select-options a:hover {
+    background-color: #f8a02b;
+    color: #fff;
+}
+
 .tf-btn {
   color: #fff;
   font-size: 13px;
@@ -1143,7 +1188,14 @@ li {
 /* Footer Area CSS */
 
 .tf-footer-area {
-  margin-top: 100px
+  margin-top: 100px;
+  position: relative;
+}
+.tf-footer-area .footer-design {
+  position: absolute;
+    top: -85px;
+    width: 100%;
+    right: 0;
 }
 .tf-footer-area .top-footer {
   background: #5e6161;
