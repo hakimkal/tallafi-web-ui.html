@@ -1252,3 +1252,33 @@ li {
   margin: 0;
   color: #ffffff;
 }
+
+.tf-pagination {
+  margin: 0;
+  padding: 0;
+  text-align: center
+}
+.tf-pagination  li {
+  display: inline
+}
+.tf-pagination li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #4b4d4d
+}
+
+/* Active and Hoverable Pagination */
+.tf-pagination li a {
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s
+    
+}
+.tf-pagination li a.active {
+  background-color: #f9af4c;
+  color: #fff
+}
+.tf-pagination li a:hover:not(.active) {
+  background-color: #ddd;
+} 
