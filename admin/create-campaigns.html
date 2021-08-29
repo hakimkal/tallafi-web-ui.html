@@ -17,10 +17,96 @@
         <link rel="icon" href="img/core-img/favicon.ico" />
 
         <!-- Core Stylesheet -->
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet"/>
 
         <!-- Responsive CSS -->
-        <link href="css/responsive/responsive.css" rel="stylesheet" />
+        <!-- <link href="css/responsive/responsive.css" rel="stylesheet" /> -->
+
+        <!-- font awesome -->
+        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        
+        <style>
+            
+.collapse {
+  visibility: visible;
+  height: 0;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-timing-function: 0.1 ease-out;
+  transition-timing-function: 0.1 ease-out;
+}
+.collapse.width {
+  -webkit-transition-property: width, visibility;
+  transition-property: width, visibility;
+  width: 0;
+  height: 100%;
+  -webkit-transition-timing-function: 0.1 ease-out;
+  transition-timing-function: 0.1 ease-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.myContainer {
+    width: 242px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.accordion li:last-child .link {
+  border-bottom: 0
+}
+
+.accordion li i {
+  position: absolute;
+  top: 20px;
+  left: 1px;
+  font-size: 12px;
+  color: white;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease
+}
+
+.collapsing {
+    display:block;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-nav {
+   display: block !important;
+   height: auto !important;
+   overflow: visible !important;
+   }
+
+   .myContainer {
+   display: absolute !important;
+   height: auto !important;
+   overflow: visible !important;
+   }
+
+   .collapse {
+      display: block;
+      height: auto !important;
+      visibility: visible;
+    }
+
+    .collapsing{
+      position: relative;
+      height: unset !important;
+      overflow: hidden;
+    }
+}
+
+        </style>
     </head>
 
     <body>
@@ -35,70 +121,56 @@
             </div>
         </div>
 
-        <div class="wrapper">
-            <ul
-                class="
-                    navbar-nav
-                    bg-gradient-primary
-                    sidebar sidebar-dark
-                    accordion
-                "
-                id="accordionSidebar"
+        <div class="d-flex" id="wrapper">
+            <div id="myContainer" class="collapse" aria-labelledby="myContainer" style="padding: 0;">
+                <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordion">
+            <!-- Sidebar - Brand -->
+            <a
+            class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <img src="img/core-img/logo-white.png" alt="" />
+        </a>
+           <!-- Nav Item - Dashboard -->
+           <li class="nav-item">
+            <a class="nav-link" href="index.html">
+                <img src="img/core-img/home.svg" alt="" />
+                <span>Dashboard</span></a
             >
-                <!-- Sidebar - Brand -->
-                <a
-                    class="
-                        sidebar-brand
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                    "
-                    href="index.html"
-                >
-                    <img src="img/core-img/logo-white.png" alt="" />
-                </a>
-
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">
-                        <img src="img/core-img/home.svg" alt="" />
-                        <span>Dashboard</span></a
-                    >
-                </li>
-                <!-- Nav Item - Campaigns -->
-                <li class="nav-item">
-                    <a class="nav-link" href="campaigns.html">
-                        <img src="img/core-img/heart.svg" alt="" />
-                        <span>Campaigns</span></a
-                    >
-                </li>
-                <!-- Nav Item - Create Campaign -->
-                <li class="nav-item">
-                    <a class="nav-link active" href="create-campaigns.html">
-                        <img src="img/core-img/heart.svg" alt="" />
-                        <span>Create Campaign</span></a
-                    >
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="beneficiaries.html">
-                        <img src="img/core-img/users.svg" alt="" />
-                        <span>Beneficiaries</span></a
-                    >
-                </li>
+        </li>
+        <!-- Nav Item - Campaigns -->
+        <li class="nav-item">
+            <a class="nav-link" href="campaigns.html">
+                <img src="img/core-img/heart.svg" alt="" />
+                <span>Campaigns</span></a
+            >
+        </li>
+        <!-- Nav Item - Create Campaign -->
+        <li class="nav-item">
+            <a class="nav-link active" href="create-campaigns.html">
+                <img src="img/core-img/heart.svg" alt="" />
+                <span>Create Campaign</span></a
+            >
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="beneficiaries.html">
+                <img src="img/core-img/users.svg" alt="" />
+                <span>Beneficiaries</span></a
+            >
+        </li>
             </ul>
+         </div>
 
-            <div class="content-wrapper">
-                <nav
-                    class="
-                        navbar navbar-expand navbar-light
+                <div class="page-content-wrapper container-fluid m-0 p-0 col-lg">
+                    <div class="container m-0 p-0 mb-3">
+                        <nav class="navbar navbar-expand-sm navbar-light m-0 navbar-expand
                         bg-white
                         topbar
-                        mb-4
-                        static-top
-                        shadow
-                    "
-                >
-                    <!-- Topbar Navbar -->
+                        mb-4 static-top">
+                            <div class="test">
+                                <a id="menu-toggle" data-target="#myContainer" data-toggle="collapse" aria-expanded="false" aria-controls="myContainer" class="btn rounded-circle" style="color: #F9AF4C;">
+                                    <i class="fa fa-bars float-left ml-2"></i>
+                                </a>
+                            </div>
+                            <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
@@ -147,162 +219,163 @@
                             </div>
                         </li>
                     </ul>
-                </nav>
-
-                <div class="container-fluid px-md-5">
-                    <div class="row">
-                        <div class="col-md-8 mb-4">
-                            <h1 class="page-head">Campaigns</h1>
-                        </div>
-                        <div class="page-card col-md-8 page-inputs">
-                            <form>
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        class="form-control tf-form-control"
-                                        id="name"
-                                        aria-describedby="name"
-                                        placeholder="Campaign Title"
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        class="form-control tf-form-control"
-                                        id="category"
-                                        placeholder="Category of Campaign"
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <input
-                                        type="number"
-                                        class="form-control tf-form-control"
-                                        id="number"
-                                        placeholder="Amount to be raised"
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <textarea
-                                        class="form-control tf-form-control"
-                                        id="idNumber"
-                                        placeholder="ID Number"
-                                        rows="3"
-                                    ></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        class="form-control tf-form-control"
-                                        id="Location"
-                                        placeholder="Location"
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        class="form-control tf-form-control"
-                                        id="focal"
-                                        placeholder="Focal Person for this project "
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <div class="upload-section-wrapper">
-                                        <div
-                                            class="
-                                                d-flex
-                                                justify-content-center
-                                                align-items-center
-                                                flex-column
-                                            "
-                                        >
-                                            <img
-                                                src="img/core-img/upload.svg"
-                                                class="mb-4"
-                                                alt=""
-                                            />
-                                            <p>
-                                                <span>Tap here</span> to select
-                                                a file from your device
-                                            </p>
-                                        </div>
-                                        <input type="file" name="myfile" />
-                                    </div>
-                                </div>
-                                <h3>Beneficiary Bank details</h3>
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        class="form-control tf-form-control"
-                                        id="focal"
-                                        placeholder="Account Name"
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        class="form-control tf-form-control"
-                                        id="focal"
-                                        placeholder="Bank Account Number"
-                                    />
-                                </div>
-                                <div class="form-group tf-custom-select">
-                                    <!-- the selected value from the select options
-                                    below has been passed back to the input
-                                    using Jquery. So one can just get the value
-                                    of the input and use it the way one normally
-                                    would a normal input value -->
-                                    <div
-                                        class="
-                                            position-relative
-                                            tf-select-input-box
-                                        "
-                                    >
+                            </nav>
+                    </div>
+                    
+                    <div class="container-fluid px-md-5">
+                        <div class="row">
+                            <div class="col-md-8 mb-4">
+                                <h1 class="page-head">Campaigns</h1>
+                            </div>
+                            <div class="page-card col-md-8 page-inputs">
+                                <form>
+                                    <div class="form-group">
                                         <input
                                             type="text"
                                             class="form-control tf-form-control"
-                                            id="bank"
-                                            placeholder="Select a bank"
-                                        />
-                                        <img
-                                            class="position-absolute"
-                                            src="img/core-img/arrow-down.svg"
-                                            alt=""
+                                            id="name"
+                                            aria-describedby="name"
+                                            placeholder="Campaign Title"
                                         />
                                     </div>
-                                    <div class="select-options">
-                                        <a href="">Zenith</a>
-                                        <a href="">First</a>
-                                        <a href="">Access</a>
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            class="form-control tf-form-control"
+                                            id="category"
+                                            placeholder="Category of Campaign"
+                                        />
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        class="form-control tf-form-control"
-                                        id="focal"
-                                        placeholder="Name"
-                                    />
-                                </div>
-                                <div
-                                    class="
-                                        form-group
-                                        d-flex
-                                        flex-column
-                                        justify-content-center
-                                        align-items-end
-                                    "
-                                >
-                                    <button type="submit" class="btn tf-btn">
-                                        Start a Campaign
-                                    </button>
-                                </div>
-                            </form>
+                                    <div class="form-group">
+                                        <input
+                                            type="number"
+                                            class="form-control tf-form-control"
+                                            id="number"
+                                            placeholder="Amount to be raised"
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea
+                                            class="form-control tf-form-control"
+                                            id="idNumber"
+                                            placeholder="ID Number"
+                                            rows="3"
+                                        ></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            class="form-control tf-form-control"
+                                            id="Location"
+                                            placeholder="Location"
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            class="form-control tf-form-control"
+                                            id="focal"
+                                            placeholder="Focal Person for this project "
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="upload-section-wrapper">
+                                            <div
+                                                class="
+                                                    d-flex
+                                                    justify-content-center
+                                                    align-items-center
+                                                    flex-column
+                                                "
+                                            >
+                                                <img
+                                                    src="img/core-img/upload.svg"
+                                                    class="mb-4"
+                                                    alt=""
+                                                />
+                                                <p>
+                                                    <span>Tap here</span> to select
+                                                    a file from your device
+                                                </p>
+                                            </div>
+                                            <input type="file" name="myfile" />
+                                        </div>
+                                    </div>
+                                    <h3>Beneficiary Bank details</h3>
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            class="form-control tf-form-control"
+                                            id="focal"
+                                            placeholder="Account Name"
+                                        />
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            class="form-control tf-form-control"
+                                            id="focal"
+                                            placeholder="Bank Account Number"
+                                        />
+                                    </div>
+                                    <div class="form-group tf-custom-select">
+                                        <!-- the selected value from the select options
+                                        below has been passed back to the input
+                                        using Jquery. So one can just get the value
+                                        of the input and use it the way one normally
+                                        would a normal input value -->
+                                        <div
+                                            class="
+                                                position-relative
+                                                tf-select-input-box
+                                            "
+                                        >
+                                            <input
+                                                type="text"
+                                                class="form-control tf-form-control"
+                                                id="bank"
+                                                placeholder="Select a bank"
+                                            />
+                                            <img
+                                                class="position-absolute"
+                                                src="img/core-img/arrow-down.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="select-options">
+                                            <a href="">Zenith</a>
+                                            <a href="">First</a>
+                                            <a href="">Access</a>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input
+                                            type="text"
+                                            class="form-control tf-form-control"
+                                            id="focal"
+                                            placeholder="Name"
+                                        />
+                                    </div>
+                                    <div
+                                        class="
+                                            form-group
+                                            d-flex
+                                            flex-column
+                                            justify-content-center
+                                            align-items-end
+                                        "
+                                    >
+                                        <button type="submit" class="btn tf-btn">
+                                            Start a Campaign
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+    </body>
         <!-- jQuery-2.2.4 js -->
         <script src="js/jquery/jquery-2.2.4.min.js"></script>
         <!-- Popper js -->
@@ -316,5 +389,7 @@
         <script src="js/others/plugins.js"></script>
         <!-- Active JS -->
         <script src="js/active.js"></script>
-    </body>
+        <!-- sidebar toggle -->
+        <script src="js/sidebar.js"></script>
+        <!-- <script src="js/accordion-sidebar.js"></script> -->
 </html>
