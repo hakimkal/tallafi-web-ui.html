@@ -7,3 +7,4 @@
 [0m2021.08.29 20:53:03 INFO  time: initialize in 0.7s[0m
 [0m2021.08.29 20:53:04 WARN  Build server is not auto-connectable.[0m
 [0m2021.08.29 20:53:04 WARN  no build tool detected in workspace 'C:\test\htdocs\Tallafi\tallafi-web-ui.html\admin'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.08.29 21:11:01 INFO  shutting down Metals[0m
