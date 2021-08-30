@@ -1,0 +1,30 @@
+.collapsing {
+  display:block;
+
+  }
+
+  @media screen and (min-width: 1024px) {
+  .navbar-nav {
+  display: block !important;
+  height: auto !important;
+  overflow: visible !important;
+  }
+
+  #myContainer {
+  display: absolute !important;
+  height: auto !important;
+  overflow: visible !important;
+  }
+
+  .collapse {
+  display: block;
+   height: auto !important;
+  visibility: visible;
+  }
+
+  .collapsing{
+  position: relative;
+  height: unset !important;
+  overflow: hidden;
+  }
+  }
