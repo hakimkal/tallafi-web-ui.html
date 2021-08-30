@@ -20,7 +20,11 @@
         <link href="css/style.css" rel="stylesheet" />
 
         <!-- Responsive CSS -->
-        <link href="css/responsive/responsive.css" rel="stylesheet" />
+        <!-- <link href="css/responsive/responsive.css" rel="stylesheet" /> -->
+        <!-- font awesome -->
+        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        
     </head>
 
     <body>
@@ -36,7 +40,8 @@
         </div>
 
         <div class="wrapper">
-            <ul
+            <div class="sidebar">
+                <ul
                 class="
                     navbar-nav
                     bg-gradient-primary
@@ -86,6 +91,7 @@
                     >
                 </li>
             </ul>
+            </div>
 
             <div class="content-wrapper">
                 <nav
@@ -98,6 +104,13 @@
                         shadow
                     "
                 >
+
+                <div class="test">
+                    <a id="menu-toggle" data-target=".sidebar" data-toggle="collapse" aria-expanded="false" aria-controls="sidebar" class="btn rounded-circle" style="color: #F9AF4C;">
+                        <i class="fa fa-bars float-left ml-2"></i>
+                    </a>
+                </div>
+
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Nav Item - User Information -->

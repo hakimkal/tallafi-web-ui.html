@@ -28,83 +28,39 @@
         
         <style>
             
-.collapse {
-  visibility: visible;
-  height: 0;
-  -webkit-transition-property: height, visibility;
-  transition-property: height, visibility;
-  -webkit-transition-timing-function: 0.1 ease-out;
-  transition-timing-function: 0.1 ease-out;
-}
-.collapse.width {
-  -webkit-transition-property: width, visibility;
-  transition-property: width, visibility;
-  width: 0;
-  height: 100%;
-  -webkit-transition-timing-function: 0.1 ease-out;
-  transition-timing-function: 0.1 ease-out;
-}
+        .collapsing {
+        display:block;
+        -webkit-transition: width .5s ease !important;
+        -o-transition: width .5s ease !important;
+        transition: width .5s ease !important;
 
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
-}
+        }
 
-.myContainer {
-    width: 242px;
-}
+        @media screen and (min-width: 1024px) {
+        .navbar-nav {
+        display: block !important;
+        height: auto !important;
+        overflow: visible !important;
+        }
 
-ul {
-  list-style-type: none;
-}
+        #myContainer {
+        display: absolute !important;
+        height: auto !important;
+        overflow: visible !important;
+        }
 
-.accordion li:last-child .link {
-  border-bottom: 0
-}
+        .collapse {
+        display: block;
+         height: auto !important;
+        visibility: visible;
+        }
 
-.accordion li i {
-  position: absolute;
-  top: 20px;
-  left: 1px;
-  font-size: 12px;
-  color: white;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease
-}
-
-.collapsing {
-    display:block;
-}
-
-@media screen and (min-width: 1024px) {
-  .navbar-nav {
-   display: block !important;
-   height: auto !important;
-   overflow: visible !important;
-   }
-
-   .myContainer {
-   display: absolute !important;
-   height: auto !important;
-   overflow: visible !important;
-   }
-
-   .collapse {
-      display: block;
-      height: auto !important;
-      visibility: visible;
-    }
-
-    .collapsing{
-      position: relative;
-      height: unset !important;
-      overflow: hidden;
-    }
-}
+        .collapsing{
+        position: relative;
+        height: unset !important;
+        overflow: hidden;
+        }
+        }
 
         </style>
     </head>
