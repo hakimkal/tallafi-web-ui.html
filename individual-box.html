@@ -56,7 +56,15 @@
       .container-style {
       box-shadow: 0px 5px 11px 1px rgba(196, 196, 196, 0.5);
       border-radius:  16px 16px 16px 16px !important;
-      
+    }
+
+    .main-img {
+        background-image: url('Rectangle 55.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 718px !important;
+        margin-left: -16px !important;
+
     }
 
     /* COLOR */
@@ -75,17 +83,20 @@
       border-radius: 34px;
     }
 
-    /* BADGE STYLING */
-    .badge {
-      position: absolute;
-      border-radius: 130px;
-      z-index: 100;
-      color: black;
-      text-decoration: underline;
-    }
-
     .flex-container {
       margin-left: -17px !important;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        .main-img {
+        background-image: url('Rectangle 55.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 321px !important;
+        margin-left: -16px !important;
+    }
+
+    
     }
     
     </style>
@@ -246,20 +257,20 @@
 class="tf-other-hero-area"
 style="background-image: url(img/bg-img/hero-2.png); height: 450px; margin-bottom: 800px;"
 >
-<div class="col-lg-6 mb-2 container-style container-fluid mx-auto bg-white rounded">
+<div class="col-lg-7 mb-2 container-style container-fluid mx-auto bg-white rounded">
   <!-- heading -->
   <p class="font-24 pt-4 pb-4 text-black font-weight-bold text-center">Provide Launch for Children in Gorrobawa Primary <br> School, Nassarawa State.</p>
   <!-- end of heading -->
 </div>
-<div class="col-lg-6 container-style container-fluid mx-auto bg-white rounded">
+<div class="col-lg-7 container-style container-fluid mx-auto bg-white rounded">
     <!-- IMAGE -->
-   <div>
-    <img src="Rectangle 55.png" class="container-fluid m-0 p-0" width="986" height="auto" alt="">
+   <div class="main-img">
+    <img src="Rectangle 55.png" width="986" height="" alt="">
    </div>
-    <div class="flex-container d-flex mt-4 pr-3">
-        <div class="d-flex ml-5 pl-5 mr-5">
-          <div class="col-lg-2 pr-5">
-            <img src="Big1.png" alt="">
+    <div class="flex-container justify-content-center d-flex mt-4 pr-">
+        <div class="d-flex">
+          <div class="col-lg-5">
+            <img src="img/Big1.png" width="60" height="60" alt="">
           </div>
               <ul class="list-unstyled font-14">
                 <li class="text-black"><b>319</b></li>
@@ -267,9 +278,9 @@ style="background-image: url(img/bg-img/hero-2.png); height: 450px; margin-botto
               </ul>
         </div>
 
-        <div class="flex-container d-flex mr-5">
-          <div class="col-lg-2 pr-5">
-            <img src="./web/Big.png" alt="">
+        <div class="flex-container d-flex">
+          <div class="col-lg-5">
+            <img src="img/Big.png" width="70" height="70" alt="">
           </div>
               <ul class="list-unstyled font-14">
                 <li class="text-black"><b>149,230</b></li>
@@ -277,9 +288,9 @@ style="background-image: url(img/bg-img/hero-2.png); height: 450px; margin-botto
               </ul>
         </div>
 
-        <div class="flex-container d-flex mr-5">
-          <div class="col-lg-2 pr-5">
-            <img src="./web/Big.png" alt="">
+        <div class="flex-container d-flex">
+          <div class="col-lg-5">
+            <img src="img/Big.png" width="40" height="40" alt="">
           </div>
               <ul class="list-unstyled font-14">
                 <li class="text-black"><b>149,230</b></li>
@@ -290,17 +301,17 @@ style="background-image: url(img/bg-img/hero-2.png); height: 450px; margin-botto
       <!-- second section -->
       <div>
         <hr class="ml-3 mr-3">
-        <p class="font-14 text-black text-center">Maryam Madugu is organizing this fundraiser to benefit Gorrobawa Community.</p>
-        <hr class="ml-3 mr-3 ">
-        <p class="font-14 text-black ml-3 mr-5">Nisl suspendisse enim vitae orci tellus id odio quisque viverra. Integer adipiscing mattis aliquet a, dictum commodo rhoncus, quis. Convallis lorem augue pellentesque proin. Diam massa nullam viverra suscipit mi porttitor et purus cras. Amet lorem massa in sed. Quam enim turpis etiam ultricies urna. Enim arcu sollicitudin sit nec faucibus turpis et turpis sodales. Mi congue morbi ac aenean vel habitasse eget nam.  Read more</p>
+        <p class="font-14 text-black ml-3 mr-3 text-center">Maryam Madugu is organizing this fundraiser to benefit Gorrobawa Community.</p>
+        <hr class="ml-3 mr-3">
+        <p class="font-14 text-black ml-3 mr-3 text-justify">Nisl suspendisse enim vitae orci tellus id odio quisque viverra. Integer adipiscing mattis aliquet a, dictum commodo rhoncus, quis. Convallis lorem augue pellentesque proin. Diam massa nullam viverra suscipit mi porttitor et purus cras. Amet lorem massa in sed. Quam enim turpis etiam ultricies urna. Enim arcu sollicitudin sit nec faucibus turpis et turpis sodales. Mi congue morbi ac aenean vel habitasse eget nam.  Read more</p>
         
             <div class="row justify-content-center align-items-center pt-3 pb-5">
-            <div class="mr-2">
-                <a href="/fundraisers/create" class="btn tf-btn">Donate Now</a>
+            <div class="mr-2 mb-3">
+                <a href="#" class="btn tf-btn">Donate Now</a>
             </div>
 
-            <div>
-            <a href="#" data-toggle="modal" data-target="#loginModal" class="btn tf-btn tf-btn-outline">Apply as Beneficiary</a>
+            <div class="mb-3">
+            <a href="#" class="btn tf-btn tf-btn-outline">Apply as Beneficiary</a>
             </div>
          
             </div>
