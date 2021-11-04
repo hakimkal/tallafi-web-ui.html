@@ -8,3 +8,8 @@
 [0m2021.08.29 20:53:04 WARN  Build server is not auto-connectable.[0m
 [0m2021.08.29 20:53:04 WARN  no build tool detected in workspace 'C:\test\htdocs\Tallafi\tallafi-web-ui.html\admin'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
 [0m2021.08.29 21:11:01 INFO  shutting down Metals[0m
+[0m2021.08.30 17:16:55 INFO  Started: Metals version 0.10.5 in workspace 'C:\test\htdocs\Tallafi\tallafi-web-ui.html\admin' for client Visual Studio Code 1.59.1.[0m
+[0m2021.08.30 17:16:55 INFO  time: initialize in 0.84s[0m
+[0m2021.08.30 17:16:57 WARN  Build server is not auto-connectable.[0m
+[0m2021.08.30 17:16:57 WARN  no build tool detected in workspace 'C:\test\htdocs\Tallafi\tallafi-web-ui.html\admin'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.08.30 17:48:06 INFO  shutting down Metals[0m

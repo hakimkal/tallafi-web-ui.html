@@ -34,4 +34,14 @@
   .page-inputs {
     padding: 20px 20px;
 }
+
+/* tallafi box */
+.form-box {
+  width: 54px !important;
+  }
+
+  
+  .form-input-field {
+  width: 385px;
+  }
 }

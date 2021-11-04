@@ -1,0 +1,113 @@
+
+        .font-14 {
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 18px;
+      }
+
+      .font-16 {
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 21px;
+      }
+
+      .font-28 {
+          font-family: DM Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 36px;
+          letter-spacing: -0.331034px;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+width: 779px;
+height: 46px;
+}
+
+.search-bar::placeholder {
+color: #9B9B9B;
+}
+
+input[type=search]:focus {
+border: 1px solid #F9AF4C;
+}
+
+/* SEARCH BAR BUTTON */
+
+
+/* TABLE */
+.table-responsive {
+width: 930px;
+}
+
+.create-box {
+  margin-left: 495px;
+}
+      
+.form-box {
+width: 754px !important;
+}
+
+
+.form-input-field {
+width: 385px;
+}
+
+select {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+/* Some browsers will not display the caret when using calc, so we put the fallback first */ 
+background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat calc(97% - 10px) !important; /* Better placement regardless of input width */
+
+}
+/*For IE*/
+select::-ms-expand { display: none; }
+
+
+textarea:active,
+textarea.form-control:active,
+input.form-control:active,
+input[type=text]:active,
+/* input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus, */
+[type=text].form-control:active,
+[type=password].form-control:active,
+[type=email].form-control:active,
+[type=tel].form-control:active,
+[contenteditable].form-control:active {
+border: 1px #444444;
+}
+
+input[type=text] {
+border-radius: 12px !important;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* TABLE */
+.table-responsive {
+width: 930px !important;
+}
+
+.create-box {
+  margin-left: 50px;
+}
+
+.form-box {
+  width: 340px !important;
+  }
+  
+  
+  .form-input-field {
+  width: 300px;
+}
+}

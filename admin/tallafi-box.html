@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!-- Title -->
+        <title>Tallafi Admin</title>
+
+        <!-- Favicon -->
+        <link rel="icon" href="img/core-img/favicon.ico" />
+
+        <!-- Core Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/tallafi-box.css">
+
+        <!-- Responsive CSS -->
+        <!-- <link href="css/responsive/responsive.css" rel="stylesheet" /> -->
+        <!-- font awesome -->
+        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        
+    </head>
+
+    <style>
+
+        .font-14 {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .font-16 {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        .font-28 {
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: -0.331034px;
+        }
+
+        /* BACK TO DASBOARD AND HEADING POSITIONING */
+
+.styling {
+  margin-top: -18px;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  width: 779px;
+  height: 46px;
+}
+
+.search-bar::placeholder {
+  color: #9B9B9B;
+}
+
+input[type=search]:focus {
+  border: 1px solid #F9AF4C;
+}
+
+/* SEARCH BAR BUTTON */
+
+
+/* TABLE */
+.table-responsive {
+  width: 930px;
+}
+        
+
+@media (min-width: 320px) and (max-width: 767px) {
+    /* TABLE */
+.table-responsive {
+  width: 930px;
+}
+}
+
+    </style>
+
+    <body>
+        <!-- Preloader Start -->
+        <div id="preloader">
+            <div class="loader">
+                <img
+                    class="logo-loader"
+                    src="./img/core-img/logo-white.png"
+                    alt="Logo"
+                />
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="sidebar">
+                <ul
+                class="
+                    navbar-nav
+                    bg-gradient-primary
+                    sidebar sidebar-dark
+                    accordion
+                "
+                id="accordionSidebar"
+            >
+                <!-- Sidebar - Brand -->
+                <a
+                    class="
+                        sidebar-brand
+                        d-flex
+                        align-items-center
+                        justify-content-center
+                    "
+                    href="index.html"
+                >
+                    <img src="img/core-img/logo-white.png" alt="" />
+                </a>
+
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="img/core-img/home.svg" alt="" />
+                        <span>Dashboard</span></a
+                    >
+                </li>
+                <!-- Nav Item - Campaigns -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="campaigns.html">
+                        <img src="img/core-img/heart.svg" alt="" />
+                        <span>Campaigns</span></a
+                    >
+                </li>
+                <!-- Nav Item - Create Campaign -->
+                <li class="nav-item">
+                    <a class="nav-link" href="create-campaigns.html">
+                        <img src="img/core-img/heart.svg" alt="" />
+                        <span>Create Campaign</span></a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="beneficiaries.html">
+                        <img src="img/core-img/users.svg" alt="" />
+                        <span>Beneficiaries</span></a
+                    >
+                </li>
+            </ul>
+            </div>
+
+            <div class="content-wrapper">
+                <nav
+                    class="
+                        navbar navbar-expand navbar-light
+                        bg-white
+                        topbar
+                        mb-4
+                        static-top
+                        shadow
+                    "
+                >
+
+                <div class="test">
+                    <a id="menu-toggle" data-target=".sidebar" data-toggle="collapse" aria-expanded="false" aria-controls="sidebar" class="btn rounded-circle" style="color: #F9AF4C;">
+                        <i class="fa fa-bars float-left ml-2"></i>
+                    </a>
+                </div>
+
+                
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="userDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                <img
+                                    class="img-profile rounded-circle"
+                                    src="img/core-img/madugu.png"
+                                />
+                                <span
+                                    class="
+                                        mr-2
+                                        d-none d-md-inline d-lg-inline
+                                        text-gray-600
+                                        small
+                                    "
+                                    >Maryam Madugu</span
+                                >
+                                <img
+                                    src="img/core-img/arrow-down.svg"
+                                    class="icon-img"
+                                    alt=""
+                                />
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div
+                                class="
+                                    dropdown-menu dropdown-menu-right
+                                    shadow
+                                    animated--grow-in
+                                "
+                                aria-labelledby="userDropdown"
+                            >
+                                <a class="dropdown-item" href="profile.html">
+                                    Profile Settings
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"> Logout </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+        <div class="ml-2">
+        <!-- HEADING -->
+            
+        <h1 class="font-28 font-bold black-color ml-2">Applicants</h1>
+    
+        <!-- SEARCH BAR -->
+  
+        <form action="#" method="GET">
+          <div class= "form-group ml-2">
+            <div class="d-flex flex-row mt-3">
+              <span class="form-control-feedback"></span>
+            <input type="search" class="search-bar font-14 pl-4 form-control mr-2" name="search" placeholder="Search Applicants" style="border-radius: 42px;">
+            <a href="#">
+              <button class="btn btn-default text-white font-14 btn-first pt-3 pb-3 pl-5 pr-5" style="background: #F9AF4C; border-radius: 42px;">Search</button>
+            </a>
+            </div>
+          </div>
+        </form> <!-- END OF SEARCH BAR -->
+  
+          <!-- TABLE -->
+  
+   <div class="table ml-2">
+    <div class="table-responsive font-14 flex-column">
+      <table class="table">
+        <tbody class="table-body">
+          <tr class="grey-color">
+            <td class="pl-4">User</td>
+            <td>Tax Station</td>
+            <td>Print Count</td>
+            <td>Latest Time Stamp</td>
+            <td class="pl-5">Action</td>
+          </tr>
+          <tr>
+            <td class="pl-4">Abdulmalik Aisha</td>
+            <td>KIRS HQ</td>
+            <td>5</td>
+            <td>2021-04-25 12:58:00</td>
+            <td>
+              <i class="btn dropdown show fa fa-ellipsis-h pl-5 ml-1 pt-0 pb-0" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item text-center font12 black-color1" href="view1.html">View</a>
+                </div>
+          </td>
+          </tr>
+
+          <tr>
+            <td class="pl-4">Abdulmalik Aisha</td>
+            <td>KIRS HQ</td>
+            <td>5</td>
+            <td>2021-04-25 12:58:00</td>
+            <td>
+              <i class="btn dropdown show fa fa-ellipsis-h pl-5 ml-1 pt-0 pb-0" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item text-center font12 black-color1" href="view1.html">View</a>
+                </div>
+          </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div> <!-- END OF TABLE -->
+               </div>
+            </div>
+        </div>
+
+        <!-- jQuery-2.2.4 js -->
+        <script src="js/jquery/jquery-2.2.4.min.js"></script>
+        <!-- Popper js -->
+        <script src="js/bootstrap/popper.min.js"></script>
+        <!-- Bootstrap-4 js -->
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        <!-- Count up js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="js/others/counter-up.js"></script>
+        <!-- All Plugins js -->
+        <script src="js/others/plugins.js"></script>
+        <!-- Active JS -->
+        <script src="js/active.js"></script>
+        <!-- sidebar toggle -->
+        <script src="js/sidebar.js"></script>
+    </body>
+</html>
